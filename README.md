@@ -34,9 +34,9 @@ This application allows users to list properties, search for rentals, manage boo
 
 Below are some previews of **Home Finder** in action:
 
-| Home Page | Listing Page | Booking Page |
+| Home Page | Property Page | Booking Page |
 |-----------|--------------|--------------|
-| ![Home Page](./screenshots/home.png) | ![Listing Page](./screenshots/listing.png) | ![Booking Page](./screenshots/booking.png) |
+| ![Home Page](./screenshots/home.png) | ![Properties Page](./screenshots/properties.png) | ![Booking Page](./screenshots/reserve.png) |
 
 
 ---
