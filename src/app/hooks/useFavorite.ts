@@ -47,7 +47,7 @@ const toggleFavorite = useCallback(async (
         router.refresh();
         toast.success(`Success`);
     } catch(error) {
-        toast.error('Something went wrong.');
+        toast.error(`Something went wrong - ${error}`);
     }
 }, [
     currentUser,

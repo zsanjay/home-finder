@@ -9,7 +9,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import React from 'react';
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 
-// @ts-ignore
+// @ts-expect-error : Leaflet typings do not include _getIconUrl method
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
     iconUrl: markerIcon.src,
