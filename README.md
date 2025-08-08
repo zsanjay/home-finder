@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏡 Home Finder
 
-## Getting Started
+A **Full Stack** real estate marketplace inspired by Airbnb, built with **Next.js 13 App Router**, **React**, **Tailwind CSS**, **Prisma**, **MongoDB**, and **NextAuth**.  
+This application allows users to list properties, search for rentals, manage bookings, and handle authentication seamlessly.
 
-First, run the development server:
+---
 
+## 🚀 Features
+
+- **Property Listings** – Create, view, and manage properties.
+- **Advanced Search & Filters** – Location-based search, date filters, and category browsing.
+- **User Authentication** – Secure login & registration with NextAuth.
+- **Image Uploads** – Cloud storage for listing images.
+- **Reservation System** – Book properties with real-time availability.
+- **Responsive UI** – Mobile-first design with Tailwind CSS.
+- **Modern App Router** – Using Next.js 13's new App Router for improved routing and layouts.
+
+---
+
+## Tech Stack
+
+| Category        | Technology |
+|-----------------|------------|
+| **Frontend**    | Next.js 13 (App Router), React 18, Tailwind CSS |
+| **Backend**     | Next.js API Routes, Prisma ORM |
+| **Database**    | MongoDB (via Prisma) |
+| **Auth**        | NextAuth.js |
+| **File Storage**| Cloudinary (for image uploads) |
+| **Deployment**  | Vercel |
+
+---
+
+## 📸 Screenshots
+
+Below are some previews of **Home Finder** in action:
+
+| Home Page | Listing Page | Booking Page |
+|-----------|--------------|--------------|
+| ![Home Page](./screenshots/home.png) | ![Listing Page](./screenshots/listing.png) | ![Booking Page](./screenshots/booking.png) |
+
+
+---
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/home-finder.git
+cd home-finder
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Configure environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a .env file in the root and add:
+```env
+DATABASE_URL="your_mongodb_connection_string"
+NEXTAUTH_SECRET="your_nextauth_secret"
+GITHUB_ID="your_github_oauth_id"
+GITHUB_SECRET="your_github_oauth_secret"
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
+```
 
-## Learn More
+### 4️⃣ Set up the database
+```bash
+npx prisma db push
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 5️⃣ Run the app
+```bash
+npm run dev
+```
+App will be available at: http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🌐 Deployment
 
-## Deploy on Vercel
+#### Deploy to Vercel:
+##### 1. Push your project to GitHub.
+##### 2. Import into Vercel.
+##### 3. Add environment variables in the Vercel dashboard.
+##### 4. Deploy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🧑‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##### GitHub: [zsanjay](https://github.com/zsanjay)
+##### LinkedIn: https://www.linkedin.com/zsanjay
