@@ -9,7 +9,7 @@ interface IParams {
     listingId?: string
 }
 
-const ListingPage = async ({ params } : { params : IParams }) => {
+const ListingPage = async (params: any) => {
     const listing = await getListingById(params);
     const reservations = await getReservations(params);
     const currentUser = await getCurrentUser();

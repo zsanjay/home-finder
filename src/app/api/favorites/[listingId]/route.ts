@@ -9,7 +9,7 @@ interface IParams {
 
 export async function POST(
     request: Request,
-    { params } : { params : IParams }
+    params : any
 ) {
     const currentUser = await getCurrentUser();
 
@@ -40,7 +40,7 @@ export async function POST(
 
 export async function DELETE(
     request : Request,
-    { params } : { params: IParams }
+    params : any
 ) {
     const currentUser = await getCurrentUser();
 
